@@ -500,6 +500,36 @@
 
         // Fokus otomatis ke input
         messageInput.focus();
+
+        // JavaScript untuk mengontrol splash screen
+        window.addEventListener('load', function() {
+            // Delay splash screen (opsional: 3 detik)
+            setTimeout(hideSplash, 3000);
+        });
+
+        function hideSplash() {
+            const splash = document.getElementById('splash');
+            const mainContent = document.getElementById('mainContent');
+            
+            splash.classList.add('splash-fade-out');
+            
+            setTimeout(() => {
+                splash.style.display = 'none';
+                mainContent.style.display = 'block';
+            }, 500);
+        }
+
+        function showSplashAgain() {
+            const splash = document.getElementById('splash');
+            const mainContent = document.getElementById('mainContent');
+            
+            mainContent.style.display = 'none';
+            splash.style.display = 'flex';
+            splash.classList.remove('splash-fade-out');
+            
+            // Tampilkan lagi selama 3 detik
+            setTimeout(hideSplash, 3000);
+        }
     </script>
 </body>
 </html>
