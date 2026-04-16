@@ -227,109 +227,6 @@
             margin-top: 10px;
         }
 
-        .footer {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            padding: 3rem 0 1rem;
-            text-align: center;
-        }
-
-        .footer-logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-
-        .footer-logo i {
-            font-size: 2.5rem;
-            margin-right: 0.5rem;
-            color: #ffd700;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        .social-links {
-            margin: 2rem 0;
-        }
-
-        .social-links a {
-            color: white;
-            font-size: 1.5rem;
-            margin: 0 1rem;
-            transition: color 0.3s;
-        }
-
-        .social-links a:hover {
-            color: #ffd700;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-            }
-
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
-
-            .container {
-                padding: 2rem 1rem;
-            }
-
-            .whatsapp-btn {
-                padding: 0.7rem 1.2rem;
-                font-size: 0.9rem;
-            }
-        }
-
-        /* Floating WhatsApp */
-        .floating-whatsapp {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 40px;
-            right: 40px;
-            background: #25D366;
-            color: white;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 0 4px 15px rgba(37,211,102,0.4);
-            z-index: 1000;
-            animation: bounce 2s infinite;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-
-        .floating-whatsapp:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(37,211,102,0.6);
-            text-decoration: none;
-            color: white;
-        }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-10px);
-            }
-            60% {
-                transform: translateY(-5px);
-            }
-        }
     </style>
 </head>
 <body>
@@ -475,7 +372,7 @@
                 return "Penyakit kronis adalah kondisi kesehatan yang berlangsung lama (3 bulan atau lebih) dan biasanya tidak sembuh total, tapi bisa dikontrol. Contoh: diabetes, hipertensi, asma, penyakit jantung.";
             }
 
-            return "Saya mengerti pertanyaan Anda tentang penyakit kronis. Bisa sebutkan penyakit spesifik yang ingin Anda ketahui? Contoh: diabetes, hipertensi, asma, jantung, stroke, atau kanker.";
+            return "Hai!! Saya mengerti pertanyaan Anda. anda pasti ingin bertanya tentang penyakit kronis. Bisa sebutkan penyakit spesifik yang ingin Anda ketahui? Contoh: diabetes, hipertensi, asma, jantung, stroke, atau kanker.";
         }
 
         function generateDiseaseResponse(disease) {
@@ -521,24 +418,5 @@
         // Fokus otomatis ke input
         messageInput.focus();
     </script>
-
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/6285730591047?text=Halo%20Admin%20Klinik Sartika,%20saya%20ingin%20bertanya%20tentang..." class="floating-whatsapp" target="_blank" title="Chat WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-    <footer id="kontak" class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="logo.png" width="100℅" alt="logo ngodingasik">
-                <img src="logo1.png" width="100℅" alt="logo ngodingasik">
-            </div>
-            <p>&copy; 2026 KLINIK SARTIKA | Ngoding_asik</p>
-            <div class="social-links">
-                <a href="https://wa.me/6285730591047" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://www.tiktok.com/@klinik.sartika.la?_r=1&_t=ZS-95IZTFbr41w"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="https://www.instagram.com/kliniksartikalamongan?igsh=eHd2cDRuMmFsMWRi"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/@TanyaDoksartika"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
 </body>
 </html>
